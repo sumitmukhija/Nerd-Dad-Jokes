@@ -1,0 +1,1 @@
+from ndf.blueprint.joke.views import joke
