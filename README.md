@@ -4,6 +4,8 @@
 
 Nerd-Dad-Jokes is a Flask based REST API server and a Twitter Bot.
 
+![Image description]('ndf/static/images/icon.png')
+
 | API endpoint | resource |
 | ------ | ------ |
 | / | random joke from the stored static file |
