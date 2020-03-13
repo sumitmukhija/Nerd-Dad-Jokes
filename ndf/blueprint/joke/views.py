@@ -14,12 +14,11 @@ def random_joke():
     joke_helper = JokeHelper()
     return jsonify({"random_joke" : joke_helper.get_random_joke()})
 
-# TODO: Write am about. Give credit to the actual author!
 @joke.route("/about")
-"""About endpoint credits the actual jokes repo and will point to the repo
-
-Returns:
-    JSON string - JSON string with repo_url, github_username
-"""
 def about():
-    return "about"
+    """About endpoint credits the actual jokes repo and will point to the repo
+
+    Returns:
+        JSON string - JSON string with repo_url, github_username
+    """
+    return jsonify({"about":"The RESTful service is based on the awesome repo by Wes Bos with an assortment of Dad jokes.","repo_url": "https://github.com/wesbos/dad-jokes", "github_username": "wesbos"})

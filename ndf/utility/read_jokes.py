@@ -40,4 +40,4 @@ class JokeHelper(object):
         if self.jokes is None:
             return "No Joke. (Dad's gone fishing. Catch you later!)"
         random_joke_index = randrange(len(self.jokes))
-        return str(self.jokes[random_joke_index]).replace("\\n", "").replace("\\t", " ")
+        return str(self.jokes[random_joke_index]).replace("\\n", "").replace("\n", "").replace("\\t", " ").replace("\t", "").replace("?", "? ")
