@@ -1,4 +1,4 @@
 flask==1.0.4
 pytest==4.6.9
 pytest-cov==2.8.1
-tweepy==3.8.0
+tweepy==3.7.0
