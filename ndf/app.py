@@ -7,6 +7,6 @@ def create_app():
 
     returns app instance"""
     app = Flask(__name__, instance_relative_config=True)
-    app.config.from_object("config.prod_settings")
+    app.config.from_object("config.settings")
     app.register_blueprint(joke)
     return app
