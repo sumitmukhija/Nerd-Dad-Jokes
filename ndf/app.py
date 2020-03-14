@@ -10,3 +10,8 @@ def create_app():
     app.config.from_object("config.settings")
     app.register_blueprint(joke)
     return app
+
+if __name__ == "__main__":
+    application = create_app()
+    application.run(host='0.0.0.0', port=80)
+    
